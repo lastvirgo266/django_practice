@@ -13,7 +13,6 @@ class BookmarkLV(ListView):
     model = Bookmark
 
 
-
 # --- DetailView
 class BookmarkDV(DetailView):
     model = Bookmark
