@@ -17,13 +17,17 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
 
-from bookmark.views import BookmarkLV, BookmarkDV
+#from bookmark.views import BookmarkLV, BookmarkDV
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^bookmark/', include('bookmark.urls', namespace='bookmark')),
+    url(r'^blog/', include('blog.urls', namespace='blog')),
 
     #Class-based view for Bookmark app
-    url(r'^bookmark/$', BookmarkLV.as_view(), name='index'),
-    url(r'^bookmark/(?P<pk>\d+)/$', BookmarkDV.as_view(), name='detail'),
+    #url(r'^bookmark/$', BookmarkLV.as_view(), name='index'),
+    #url(r'^bookmark/(?P<pk>\d+)/$', BookmarkDV.as_view(), name='detail'),
+
+    
 
 ]
