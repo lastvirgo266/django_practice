@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^archive/$', PostAV.as_view(), name='post_archive'),
 
     #Example : /2012/
-    url(r'^(?P<year>\d{4})/$', PostYAV.as_vies(), name='post_year_archive'),
+    url(r'^(?P<year>\d{4})/$', PostYAV.as_view(), name='post_year_archive'),
 
 
     #Example : /2012/nov/

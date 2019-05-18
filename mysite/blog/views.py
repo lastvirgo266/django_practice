@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
-from django.views.generic import ListView, DatailView
-from django.views.generic.dates import ArchiveIndexVew, YearArchiveView, MonthArchiveVew
+from django.views.generic import ListView, DetailView
+from django.views.generic.dates import ArchiveIndexView, YearArchiveView, MonthArchiveView
 from django.views.generic.dates import DayArchiveView, TodayArchiveView
 
 
